@@ -57,17 +57,48 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="179" max="-2" attributes="0"/>
                       <Component id="cbxGalerias" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnSelectGaleria" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="149" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="192" max="-2" attributes="0"/>
+                      <EmptySpace pref="120" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="192" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblGaleriasVenden" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblGaleriasIngresan" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtAlimentosIngresan" max="32767" attributes="0"/>
+                                          <Component id="txtAlimentosVenden" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblGaleriasDesper" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtAlimentosDesper" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                                      <Component id="btnEnviar" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="btnGenEstadisticas" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -81,7 +112,27 @@
                           <Component id="btnSelectGaleria" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="cbxGalerias" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="267" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtAlimentosIngresan" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblGaleriasIngresan" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtAlimentosVenden" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblGaleriasVenden" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtAlimentosDesper" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblGaleriasDesper" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnEnviar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnGenEstadisticas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="76" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -112,6 +163,37 @@
                 <Property name="text" type="java.lang.String" value="GESTIONAR"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JTextField" name="txtAlimentosIngresan">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtAlimentosVenden">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtAlimentosDesper">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblGaleriasIngresan">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alimentos que ingresar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblGaleriasVenden">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alimentos que venden"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblGaleriasDesper">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alimentos desperdiciados"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnEnviar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ENVIAR"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnGenEstadisticas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="GENERAR ESTADISTICAS"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panelComunas">
@@ -126,17 +208,44 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="165" max="-2" attributes="0"/>
-                      <Component id="cbxColumnas" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnSelectComuna" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="163" max="32767" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="187" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="165" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblTotalComunas" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTerceraComuna" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblMayoresComuna" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="txtPersonasMayores" min="-2" pref="80" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="cbxColumnas" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnSelectComuna" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="lblNinosComunas" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="txtNinosDesnutricion" min="-2" pref="80" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                  <Component id="txtPersonasTercera" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalPersonas" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="btnEnviarComunas" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnGenEstadisticasComunas" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="90" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -150,7 +259,32 @@
                           <Component id="btnSelectComuna" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="cbxColumnas" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="267" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtTotalPersonas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTotalComunas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtPersonasTercera" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTerceraComuna" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtPersonasMayores" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMayoresComuna" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="txtNinosDesnutricion" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblNinosComunas" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnEnviarComunas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnGenEstadisticasComunas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="45" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -179,6 +313,50 @@
             <Component class="javax.swing.JButton" name="btnSelectComuna">
               <Properties>
                 <Property name="text" type="java.lang.String" value="GESTIONAR"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtTotalPersonas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jTextField1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtPersonasTercera">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jTextField2"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtPersonasMayores">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtNinosDesnutricion">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblTotalComunas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Total personas"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblTerceraComuna">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Personas tercera edad"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblMayoresComuna">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Personas mayores de edad"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblNinosComunas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ni&#xf1;os indice de desnutricion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnEnviarComunas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ENVIAR"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnGenEstadisticasComunas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="GENERAR ESTADISTICAS"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -210,6 +388,34 @@
                       </Group>
                       <EmptySpace pref="170" max="32767" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="btnEnviarSuper" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnGenEstadisticasSuper" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="lblSuperIngresar" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="txtAlimentosIngresanSuper" min="-2" pref="141" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblSuperVenden" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="txtAlimentosVendenSuper" min="-2" pref="141" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblSuperDesper" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="txtAlimentosDesperSuper" min="-2" pref="141" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -222,7 +428,27 @@
                           <Component id="btnSelectSuper" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="cbxSupers" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="267" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtAlimentosIngresanSuper" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSuperIngresar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtAlimentosVendenSuper" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSuperVenden" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtAlimentosDesperSuper" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSuperDesper" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnGenEstadisticasSuper" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnEnviarSuper" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="103" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -251,6 +477,37 @@
             <Component class="javax.swing.JButton" name="btnSelectSuper">
               <Properties>
                 <Property name="text" type="java.lang.String" value="GESTIONAR"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblSuperIngresar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alimentos que ingresar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtAlimentosIngresanSuper">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblSuperVenden">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alimentos que venden"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtAlimentosVendenSuper">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblSuperDesper">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alimentos desperdiciados"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtAlimentosDesperSuper">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnEnviarSuper">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ENVIAR"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnGenEstadisticasSuper">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="GENERAR ESTADISTICAS"/>
               </Properties>
             </Component>
           </SubComponents>

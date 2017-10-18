@@ -33,14 +33,40 @@ public class VistaUsuario extends javax.swing.JFrame {
         cbxGalerias = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
         btnSelectGaleria = new javax.swing.JButton();
+        txtAlimentosIngresan = new javax.swing.JTextField();
+        txtAlimentosVenden = new javax.swing.JTextField();
+        txtAlimentosDesper = new javax.swing.JTextField();
+        lblGaleriasIngresan = new javax.swing.JLabel();
+        lblGaleriasVenden = new javax.swing.JLabel();
+        lblGaleriasDesper = new javax.swing.JLabel();
+        btnEnviar = new javax.swing.JButton();
+        btnGenEstadisticas = new javax.swing.JButton();
         panelComunas = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         cbxColumnas = new javax.swing.JComboBox<>();
         btnSelectComuna = new javax.swing.JButton();
+        txtTotalPersonas = new javax.swing.JTextField();
+        txtPersonasTercera = new javax.swing.JTextField();
+        txtPersonasMayores = new javax.swing.JTextField();
+        txtNinosDesnutricion = new javax.swing.JTextField();
+        lblTotalComunas = new javax.swing.JLabel();
+        lblTerceraComuna = new javax.swing.JLabel();
+        lblMayoresComuna = new javax.swing.JLabel();
+        lblNinosComunas = new javax.swing.JLabel();
+        btnEnviarComunas = new javax.swing.JButton();
+        btnGenEstadisticasComunas = new javax.swing.JButton();
         panelSuper = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         cbxSupers = new javax.swing.JComboBox<>();
         btnSelectSuper = new javax.swing.JButton();
+        lblSuperIngresar = new javax.swing.JLabel();
+        txtAlimentosIngresanSuper = new javax.swing.JTextField();
+        lblSuperVenden = new javax.swing.JLabel();
+        txtAlimentosVendenSuper = new javax.swing.JTextField();
+        lblSuperDesper = new javax.swing.JLabel();
+        txtAlimentosDesperSuper = new javax.swing.JTextField();
+        btnEnviarSuper = new javax.swing.JButton();
+        btnGenEstadisticasSuper = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -49,6 +75,16 @@ public class VistaUsuario extends javax.swing.JFrame {
         jLabel1.setText("SELECCIONAR GALERIA");
 
         btnSelectGaleria.setText("GESTIONAR");
+
+        lblGaleriasIngresan.setText("Alimentos que ingresar");
+
+        lblGaleriasVenden.setText("Alimentos que venden");
+
+        lblGaleriasDesper.setText("Alimentos desperdiciados");
+
+        btnEnviar.setText("ENVIAR");
+
+        btnGenEstadisticas.setText("GENERAR ESTADISTICAS");
 
         javax.swing.GroupLayout panelGaleriasLayout = new javax.swing.GroupLayout(panelGalerias);
         panelGalerias.setLayout(panelGaleriasLayout);
@@ -59,11 +95,33 @@ public class VistaUsuario extends javax.swing.JFrame {
                 .addComponent(cbxGalerias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnSelectGaleria)
-                .addContainerGap(149, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelGaleriasLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(192, 192, 192))
+                .addContainerGap(120, Short.MAX_VALUE)
+                .addGroup(panelGaleriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelGaleriasLayout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(192, 192, 192))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelGaleriasLayout.createSequentialGroup()
+                        .addGroup(panelGaleriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(panelGaleriasLayout.createSequentialGroup()
+                                .addGroup(panelGaleriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblGaleriasVenden)
+                                    .addComponent(lblGaleriasIngresan))
+                                .addGap(23, 23, 23)
+                                .addGroup(panelGaleriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtAlimentosIngresan)
+                                    .addComponent(txtAlimentosVenden)))
+                            .addGroup(panelGaleriasLayout.createSequentialGroup()
+                                .addComponent(lblGaleriasDesper)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtAlimentosDesper))
+                            .addGroup(panelGaleriasLayout.createSequentialGroup()
+                                .addGap(19, 19, 19)
+                                .addComponent(btnEnviar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnGenEstadisticas)))
+                        .addGap(116, 116, 116))))
         );
         panelGaleriasLayout.setVerticalGroup(
             panelGaleriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -74,7 +132,23 @@ public class VistaUsuario extends javax.swing.JFrame {
                 .addGroup(panelGaleriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSelectGaleria)
                     .addComponent(cbxGalerias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(267, Short.MAX_VALUE))
+                .addGap(54, 54, 54)
+                .addGroup(panelGaleriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtAlimentosIngresan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblGaleriasIngresan))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelGaleriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtAlimentosVenden, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblGaleriasVenden))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelGaleriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtAlimentosDesper, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblGaleriasDesper))
+                .addGap(18, 18, 18)
+                .addGroup(panelGaleriasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEnviar)
+                    .addComponent(btnGenEstadisticas))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Galerias", panelGalerias);
@@ -85,20 +159,56 @@ public class VistaUsuario extends javax.swing.JFrame {
 
         btnSelectComuna.setText("GESTIONAR");
 
+        txtTotalPersonas.setText("jTextField1");
+
+        txtPersonasTercera.setText("jTextField2");
+
+        lblTotalComunas.setText("Total personas");
+
+        lblTerceraComuna.setText("Personas tercera edad");
+
+        lblMayoresComuna.setText("Personas mayores de edad");
+
+        lblNinosComunas.setText("Niños indice de desnutricion");
+
+        btnEnviarComunas.setText("ENVIAR");
+
+        btnGenEstadisticasComunas.setText("GENERAR ESTADISTICAS");
+
         javax.swing.GroupLayout panelComunasLayout = new javax.swing.GroupLayout(panelComunas);
         panelComunas.setLayout(panelComunasLayout);
         panelComunasLayout.setHorizontalGroup(
             panelComunasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelComunasLayout.createSequentialGroup()
-                .addGap(165, 165, 165)
-                .addComponent(cbxColumnas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnSelectComuna)
-                .addContainerGap(163, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelComunasLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(187, 187, 187))
+            .addGroup(panelComunasLayout.createSequentialGroup()
+                .addGap(165, 165, 165)
+                .addGroup(panelComunasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblTotalComunas)
+                    .addComponent(lblTerceraComuna)
+                    .addGroup(panelComunasLayout.createSequentialGroup()
+                        .addComponent(lblMayoresComuna)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtPersonasMayores, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelComunasLayout.createSequentialGroup()
+                        .addComponent(cbxColumnas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnSelectComuna))
+                    .addGroup(panelComunasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(panelComunasLayout.createSequentialGroup()
+                            .addComponent(lblNinosComunas)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtNinosDesnutricion, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(panelComunasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtPersonasTercera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtTotalPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(panelComunasLayout.createSequentialGroup()
+                        .addComponent(btnEnviarComunas)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnGenEstadisticasComunas)))
+                .addContainerGap(90, Short.MAX_VALUE))
         );
         panelComunasLayout.setVerticalGroup(
             panelComunasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,7 +219,27 @@ public class VistaUsuario extends javax.swing.JFrame {
                 .addGroup(panelComunasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSelectComuna)
                     .addComponent(cbxColumnas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(267, Short.MAX_VALUE))
+                .addGap(47, 47, 47)
+                .addGroup(panelComunasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTotalPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblTotalComunas))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panelComunasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtPersonasTercera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblTerceraComuna))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panelComunasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtPersonasMayores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblMayoresComuna))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelComunasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtNinosDesnutricion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNinosComunas))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panelComunasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEnviarComunas)
+                    .addComponent(btnGenEstadisticasComunas))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Comunas", panelComunas);
@@ -119,6 +249,16 @@ public class VistaUsuario extends javax.swing.JFrame {
         cbxSupers.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         btnSelectSuper.setText("GESTIONAR");
+
+        lblSuperIngresar.setText("Alimentos que ingresar");
+
+        lblSuperVenden.setText("Alimentos que venden");
+
+        lblSuperDesper.setText("Alimentos desperdiciados");
+
+        btnEnviarSuper.setText("ENVIAR");
+
+        btnGenEstadisticasSuper.setText("GENERAR ESTADISTICAS");
 
         javax.swing.GroupLayout panelSuperLayout = new javax.swing.GroupLayout(panelSuper);
         panelSuper.setLayout(panelSuperLayout);
@@ -135,6 +275,27 @@ public class VistaUsuario extends javax.swing.JFrame {
                         .addGap(170, 170, 170)
                         .addComponent(jLabel2)))
                 .addContainerGap(170, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSuperLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panelSuperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(panelSuperLayout.createSequentialGroup()
+                        .addComponent(btnEnviarSuper)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnGenEstadisticasSuper))
+                    .addGroup(panelSuperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(panelSuperLayout.createSequentialGroup()
+                            .addComponent(lblSuperIngresar)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtAlimentosIngresanSuper, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelSuperLayout.createSequentialGroup()
+                            .addComponent(lblSuperVenden)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtAlimentosVendenSuper, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelSuperLayout.createSequentialGroup()
+                            .addComponent(lblSuperDesper)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(txtAlimentosDesperSuper, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(119, 119, 119))
         );
         panelSuperLayout.setVerticalGroup(
             panelSuperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,7 +306,23 @@ public class VistaUsuario extends javax.swing.JFrame {
                 .addGroup(panelSuperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSelectSuper)
                     .addComponent(cbxSupers, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(267, Short.MAX_VALUE))
+                .addGap(33, 33, 33)
+                .addGroup(panelSuperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtAlimentosIngresanSuper, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSuperIngresar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelSuperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtAlimentosVendenSuper, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSuperVenden))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelSuperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtAlimentosDesperSuper, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSuperDesper))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panelSuperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnGenEstadisticasSuper)
+                    .addComponent(btnEnviarSuper))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Supermercados", panelSuper);
@@ -206,6 +383,12 @@ public class VistaUsuario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnEnviar;
+    private javax.swing.JButton btnEnviarComunas;
+    private javax.swing.JButton btnEnviarSuper;
+    private javax.swing.JButton btnGenEstadisticas;
+    private javax.swing.JButton btnGenEstadisticasComunas;
+    private javax.swing.JButton btnGenEstadisticasSuper;
     private javax.swing.JButton btnSelectComuna;
     private javax.swing.JButton btnSelectGaleria;
     private javax.swing.JButton btnSelectSuper;
@@ -216,8 +399,28 @@ public class VistaUsuario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JLabel lblGaleriasDesper;
+    private javax.swing.JLabel lblGaleriasIngresan;
+    private javax.swing.JLabel lblGaleriasVenden;
+    private javax.swing.JLabel lblMayoresComuna;
+    private javax.swing.JLabel lblNinosComunas;
+    private javax.swing.JLabel lblSuperDesper;
+    private javax.swing.JLabel lblSuperIngresar;
+    private javax.swing.JLabel lblSuperVenden;
+    private javax.swing.JLabel lblTerceraComuna;
+    private javax.swing.JLabel lblTotalComunas;
     private javax.swing.JPanel panelComunas;
     private javax.swing.JPanel panelGalerias;
     private javax.swing.JPanel panelSuper;
+    private javax.swing.JTextField txtAlimentosDesper;
+    private javax.swing.JTextField txtAlimentosDesperSuper;
+    private javax.swing.JTextField txtAlimentosIngresan;
+    private javax.swing.JTextField txtAlimentosIngresanSuper;
+    private javax.swing.JTextField txtAlimentosVenden;
+    private javax.swing.JTextField txtAlimentosVendenSuper;
+    private javax.swing.JTextField txtNinosDesnutricion;
+    private javax.swing.JTextField txtPersonasMayores;
+    private javax.swing.JTextField txtPersonasTercera;
+    private javax.swing.JTextField txtTotalPersonas;
     // End of variables declaration//GEN-END:variables
 }

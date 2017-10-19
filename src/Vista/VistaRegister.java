@@ -5,6 +5,9 @@
  */
 package Vista;
 
+import Modelo.Controlador;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author danielardila
@@ -122,14 +125,33 @@ public class VistaRegister extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
-        // TODO add your handling code here:
+        
+
+        
+        
     }//GEN-LAST:event_txtEmailActionPerformed
 
     private void btnRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarseActionPerformed
         // TODO add your handling code here:
-        VistaLogin vistaLogin = new VistaLogin();
-        vistaLogin.setVisible(true);
-        this.setVisible(false);
+        
+        if(txtNombre.getText().equals("") && txtEmail.getText().equals("") && txtPass.getText().equals("")){
+            JOptionPane.showMessageDialog(rootPane, "Llena todos los campos");
+        }
+        else{
+            String nombre = txtNombre.getText();
+            String email = txtEmail.getText();
+            String pass = txtPass.getText();
+            if(Controlador.registrarUsuario(nombre, email, pass) != null){
+                JOptionPane.showMessageDialog(rootPane, "Usuario creado Satisfactoriamente");  
+                VistaLogin vistaLogin = new VistaLogin();
+                vistaLogin.setVisible(true);
+                this.setVisible(false);
+            }
+            else{
+                JOptionPane.showMessageDialog(rootPane, "Ha ocurrido un error");
+            }
+        }
+        
     }//GEN-LAST:event_btnRegistrarseActionPerformed
 
     /**

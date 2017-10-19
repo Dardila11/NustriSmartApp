@@ -5,6 +5,9 @@
  */
 package Vista;
 
+import Modelo.Controlador;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author danielardila
@@ -137,6 +140,14 @@ public class VistaLogin extends javax.swing.JFrame {
             vistaUsuario.setVisible(true);
             this.dispose();
         }
+        else if(Controlador.activadoUsuario(txtEmail.getText())){
+            JOptionPane.showMessageDialog(rootPane, "Ha ingresado correctamente");
+            VistaUsuario vistaUsuario = new VistaUsuario();
+            vistaUsuario.setVisible(true);
+            this.dispose();
+        }
+        else
+            JOptionPane.showMessageDialog(rootPane, "No ha podido ingresar");
     }//GEN-LAST:event_btnIngresarActionPerformed
 
     private void btnRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarseActionPerformed
